@@ -23,6 +23,12 @@
 		4ED12D522871D665008AFEFB /* BankDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D512871D665008AFEFB /* BankDetailsViewController.storyboard */; };
 		4ED12D542871D679008AFEFB /* BankDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D532871D679008AFEFB /* BankDetailsViewController.swift */; };
 		4ED12D562871D68F008AFEFB /* BankDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D552871D68F008AFEFB /* BankDetailsViewModel.swift */; };
+		4ED12D5B2871D7F9008AFEFB /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D5A2871D7F9008AFEFB /* Bank.swift */; };
+		4ED12D5E2871D8D4008AFEFB /* BanksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D5D2871D8D4008AFEFB /* BanksRepository.swift */; };
+		4ED12D622871DC61008AFEFB /* FetchBanksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D612871DC61008AFEFB /* FetchBanksUseCase.swift */; };
+		4ED12D652871DE57008AFEFB /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 4ED12D642871DE57008AFEFB /* Resolver */; };
+		4ED12D672871DE57008AFEFB /* Resolver-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4ED12D662871DE57008AFEFB /* Resolver-Dynamic */; };
+		4ED12D692871DE57008AFEFB /* Resolver-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 4ED12D682871DE57008AFEFB /* Resolver-Static */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,9 @@
 		4ED12D512871D665008AFEFB /* BankDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BankDetailsViewController.storyboard; sourceTree = "<group>"; };
 		4ED12D532871D679008AFEFB /* BankDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsViewController.swift; sourceTree = "<group>"; };
 		4ED12D552871D68F008AFEFB /* BankDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsViewModel.swift; sourceTree = "<group>"; };
+		4ED12D5A2871D7F9008AFEFB /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		4ED12D5D2871D8D4008AFEFB /* BanksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksRepository.swift; sourceTree = "<group>"; };
+		4ED12D612871DC61008AFEFB /* FetchBanksUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBanksUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED12D672871DE57008AFEFB /* Resolver-Dynamic in Frameworks */,
+				4ED12D692871DE57008AFEFB /* Resolver-Static in Frameworks */,
+				4ED12D652871DE57008AFEFB /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +129,7 @@
 				4ED12D3A2871D413008AFEFB /* Common */,
 				4ED12D402871D4F5008AFEFB /* Presentation */,
 				4ED12D3F2871D4C6008AFEFB /* Resources */,
+				4ED12D592871D7E6008AFEFB /* Domain */,
 			);
 			path = "bankApp-MVVM";
 			sourceTree = "<group>";
@@ -236,6 +249,48 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4ED12D572871D7C9008AFEFB /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D5A2871D7F9008AFEFB /* Bank.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		4ED12D592871D7E6008AFEFB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D602871DC45008AFEFB /* UseCases */,
+				4ED12D5C2871D8BB008AFEFB /* Interfaces */,
+				4ED12D572871D7C9008AFEFB /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4ED12D5C2871D8BB008AFEFB /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D5F2871D9C6008AFEFB /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		4ED12D5F2871D9C6008AFEFB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D5D2871D8D4008AFEFB /* BanksRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		4ED12D602871DC45008AFEFB /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D612871DC61008AFEFB /* FetchBanksUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +307,11 @@
 			dependencies = (
 			);
 			name = "bankApp-MVVM";
+			packageProductDependencies = (
+				4ED12D642871DE57008AFEFB /* Resolver */,
+				4ED12D662871DE57008AFEFB /* Resolver-Dynamic */,
+				4ED12D682871DE57008AFEFB /* Resolver-Static */,
+			);
 			productName = "bankApp-MVVM";
 			productReference = 4ED12D012871D000008AFEFB /* bankApp-MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -324,6 +384,9 @@
 				Base,
 			);
 			mainGroup = 4ED12CF82871D000008AFEFB;
+			packageReferences = (
+				4ED12D632871DE57008AFEFB /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = 4ED12D022871D000008AFEFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -368,13 +431,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED12D622871DC61008AFEFB /* FetchBanksUseCase.swift in Sources */,
 				4ED12D4C2871D611008AFEFB /* BankListViewController.swift in Sources */,
 				4ED12D4E2871D629008AFEFB /* BankListItemViewModel.swift in Sources */,
 				4ED12D562871D68F008AFEFB /* BankDetailsViewModel.swift in Sources */,
+				4ED12D5E2871D8D4008AFEFB /* BanksRepository.swift in Sources */,
 				4ED12D3C2871D428008AFEFB /* Cancelable.swift in Sources */,
 				4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */,
 				4ED12D3E2871D446008AFEFB /* ConnectionError.swift in Sources */,
 				4ED12D542871D679008AFEFB /* BankDetailsViewController.swift in Sources */,
+				4ED12D5B2871D7F9008AFEFB /* Bank.swift in Sources */,
 				4ED12D502871D635008AFEFB /* BankListViewModel.swift in Sources */,
 				4ED12D072871D000008AFEFB /* SceneDelegate.swift in Sources */,
 			);
@@ -710,6 +776,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4ED12D632871DE57008AFEFB /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4ED12D642871DE57008AFEFB /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ED12D632871DE57008AFEFB /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		4ED12D662871DE57008AFEFB /* Resolver-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ED12D632871DE57008AFEFB /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = "Resolver-Dynamic";
+		};
+		4ED12D682871DE57008AFEFB /* Resolver-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ED12D632871DE57008AFEFB /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = "Resolver-Static";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4ED12CF92871D000008AFEFB /* Project object */;
 }
