@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D042871D000008AFEFB /* AppDelegate.swift */; };
 		4ED12D072871D000008AFEFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D062871D000008AFEFB /* SceneDelegate.swift */; };
-		4ED12D092871D000008AFEFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D082871D000008AFEFB /* ViewController.swift */; };
-		4ED12D0C2871D000008AFEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0A2871D000008AFEFB /* Main.storyboard */; };
 		4ED12D0E2871D003008AFEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0D2871D003008AFEFB /* Assets.xcassets */; };
 		4ED12D112871D003008AFEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */; };
 		4ED12D1C2871D004008AFEFB /* bankApp_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D1B2871D004008AFEFB /* bankApp_MVVMTests.swift */; };
@@ -18,6 +16,13 @@
 		4ED12D282871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D272871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift */; };
 		4ED12D3C2871D428008AFEFB /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D3B2871D428008AFEFB /* Cancelable.swift */; };
 		4ED12D3E2871D446008AFEFB /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D3D2871D446008AFEFB /* ConnectionError.swift */; };
+		4ED12D4A2871D5EC008AFEFB /* BankListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D492871D5EC008AFEFB /* BankListViewController.storyboard */; };
+		4ED12D4C2871D611008AFEFB /* BankListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D4B2871D611008AFEFB /* BankListViewController.swift */; };
+		4ED12D4E2871D629008AFEFB /* BankListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D4D2871D629008AFEFB /* BankListItemViewModel.swift */; };
+		4ED12D502871D635008AFEFB /* BankListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D4F2871D635008AFEFB /* BankListViewModel.swift */; };
+		4ED12D522871D665008AFEFB /* BankDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D512871D665008AFEFB /* BankDetailsViewController.storyboard */; };
+		4ED12D542871D679008AFEFB /* BankDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D532871D679008AFEFB /* BankDetailsViewController.swift */; };
+		4ED12D562871D68F008AFEFB /* BankDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D552871D68F008AFEFB /* BankDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +46,6 @@
 		4ED12D012871D000008AFEFB /* bankApp-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bankApp-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED12D042871D000008AFEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ED12D062871D000008AFEFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4ED12D082871D000008AFEFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4ED12D0B2871D000008AFEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4ED12D0D2871D003008AFEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ED12D102871D003008AFEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ED12D122871D003008AFEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +56,13 @@
 		4ED12D272871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankApp_MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4ED12D3B2871D428008AFEFB /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
 		4ED12D3D2871D446008AFEFB /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
+		4ED12D492871D5EC008AFEFB /* BankListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BankListViewController.storyboard; sourceTree = "<group>"; };
+		4ED12D4B2871D611008AFEFB /* BankListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListViewController.swift; sourceTree = "<group>"; };
+		4ED12D4D2871D629008AFEFB /* BankListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListItemViewModel.swift; sourceTree = "<group>"; };
+		4ED12D4F2871D635008AFEFB /* BankListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListViewModel.swift; sourceTree = "<group>"; };
+		4ED12D512871D665008AFEFB /* BankDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BankDetailsViewController.storyboard; sourceTree = "<group>"; };
+		4ED12D532871D679008AFEFB /* BankDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsViewController.swift; sourceTree = "<group>"; };
+		4ED12D552871D68F008AFEFB /* BankDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,11 +168,72 @@
 		4ED12D402871D4F5008AFEFB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				4ED12D0A2871D000008AFEFB /* Main.storyboard */,
-				4ED12D082871D000008AFEFB /* ViewController.swift */,
+				4ED12D422871D552008AFEFB /* BanksScene */,
 				4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4ED12D422871D552008AFEFB /* BanksScene */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D432871D567008AFEFB /* BanksList */,
+				4ED12D442871D57D008AFEFB /* BankDetails */,
+			);
+			path = BanksScene;
+			sourceTree = "<group>";
+		};
+		4ED12D432871D567008AFEFB /* BanksList */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D482871D5B1008AFEFB /* ViewModel */,
+				4ED12D472871D5AC008AFEFB /* View */,
+			);
+			path = BanksList;
+			sourceTree = "<group>";
+		};
+		4ED12D442871D57D008AFEFB /* BankDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D462871D5A3008AFEFB /* ViewModel */,
+				4ED12D452871D59E008AFEFB /* View */,
+			);
+			path = BankDetails;
+			sourceTree = "<group>";
+		};
+		4ED12D452871D59E008AFEFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D512871D665008AFEFB /* BankDetailsViewController.storyboard */,
+				4ED12D532871D679008AFEFB /* BankDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4ED12D462871D5A3008AFEFB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D552871D68F008AFEFB /* BankDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4ED12D472871D5AC008AFEFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D492871D5EC008AFEFB /* BankListViewController.storyboard */,
+				4ED12D4B2871D611008AFEFB /* BankListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4ED12D482871D5B1008AFEFB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D4D2871D629008AFEFB /* BankListItemViewModel.swift */,
+				4ED12D4F2871D635008AFEFB /* BankListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +340,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED12D522871D665008AFEFB /* BankDetailsViewController.storyboard in Resources */,
 				4ED12D112871D003008AFEFB /* LaunchScreen.storyboard in Resources */,
+				4ED12D4A2871D5EC008AFEFB /* BankListViewController.storyboard in Resources */,
 				4ED12D0E2871D003008AFEFB /* Assets.xcassets in Resources */,
-				4ED12D0C2871D000008AFEFB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,10 +368,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED12D092871D000008AFEFB /* ViewController.swift in Sources */,
+				4ED12D4C2871D611008AFEFB /* BankListViewController.swift in Sources */,
+				4ED12D4E2871D629008AFEFB /* BankListItemViewModel.swift in Sources */,
+				4ED12D562871D68F008AFEFB /* BankDetailsViewModel.swift in Sources */,
 				4ED12D3C2871D428008AFEFB /* Cancelable.swift in Sources */,
 				4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */,
 				4ED12D3E2871D446008AFEFB /* ConnectionError.swift in Sources */,
+				4ED12D542871D679008AFEFB /* BankDetailsViewController.swift in Sources */,
+				4ED12D502871D635008AFEFB /* BankListViewModel.swift in Sources */,
 				4ED12D072871D000008AFEFB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,14 +413,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4ED12D0A2871D000008AFEFB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4ED12D0B2871D000008AFEFB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
