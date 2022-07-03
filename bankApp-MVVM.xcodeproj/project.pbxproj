@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D042871D000008AFEFB /* AppDelegate.swift */; };
+		4ED12D072871D000008AFEFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D062871D000008AFEFB /* SceneDelegate.swift */; };
+		4ED12D092871D000008AFEFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D082871D000008AFEFB /* ViewController.swift */; };
+		4ED12D0C2871D000008AFEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0A2871D000008AFEFB /* Main.storyboard */; };
+		4ED12D0E2871D003008AFEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0D2871D003008AFEFB /* Assets.xcassets */; };
+		4ED12D112871D003008AFEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */; };
+		4ED12D1C2871D004008AFEFB /* bankApp_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D1B2871D004008AFEFB /* bankApp_MVVMTests.swift */; };
+		4ED12D262871D004008AFEFB /* bankApp_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D252871D004008AFEFB /* bankApp_MVVMUITests.swift */; };
+		4ED12D282871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D272871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4ED12D182871D004008AFEFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ED12CF92871D000008AFEFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ED12D002871D000008AFEFB;
+			remoteInfo = "bankApp-MVVM";
+		};
+		4ED12D222871D004008AFEFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ED12CF92871D000008AFEFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ED12D002871D000008AFEFB;
+			remoteInfo = "bankApp-MVVM";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4ED12D012871D000008AFEFB /* bankApp-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bankApp-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED12D042871D000008AFEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4ED12D062871D000008AFEFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4ED12D082871D000008AFEFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4ED12D0B2871D000008AFEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4ED12D0D2871D003008AFEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4ED12D102871D003008AFEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4ED12D122871D003008AFEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED12D172871D004008AFEFB /* bankApp-MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bankApp-MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED12D1B2871D004008AFEFB /* bankApp_MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankApp_MVVMTests.swift; sourceTree = "<group>"; };
+		4ED12D212871D004008AFEFB /* bankApp-MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bankApp-MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED12D252871D004008AFEFB /* bankApp_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankApp_MVVMUITests.swift; sourceTree = "<group>"; };
+		4ED12D272871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankApp_MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4ED12CFE2871D000008AFEFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED12D142871D004008AFEFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED12D1E2871D004008AFEFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ED12CF82871D000008AFEFB = {
+			isa = PBXGroup;
+			children = (
+				4ED12D032871D000008AFEFB /* bankApp-MVVM */,
+				4ED12D1A2871D004008AFEFB /* bankApp-MVVMTests */,
+				4ED12D242871D004008AFEFB /* bankApp-MVVMUITests */,
+				4ED12D022871D000008AFEFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4ED12D022871D000008AFEFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D012871D000008AFEFB /* bankApp-MVVM.app */,
+				4ED12D172871D004008AFEFB /* bankApp-MVVMTests.xctest */,
+				4ED12D212871D004008AFEFB /* bankApp-MVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4ED12D032871D000008AFEFB /* bankApp-MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D042871D000008AFEFB /* AppDelegate.swift */,
+				4ED12D062871D000008AFEFB /* SceneDelegate.swift */,
+				4ED12D082871D000008AFEFB /* ViewController.swift */,
+				4ED12D0A2871D000008AFEFB /* Main.storyboard */,
+				4ED12D0D2871D003008AFEFB /* Assets.xcassets */,
+				4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */,
+				4ED12D122871D003008AFEFB /* Info.plist */,
+			);
+			path = "bankApp-MVVM";
+			sourceTree = "<group>";
+		};
+		4ED12D1A2871D004008AFEFB /* bankApp-MVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D1B2871D004008AFEFB /* bankApp_MVVMTests.swift */,
+			);
+			path = "bankApp-MVVMTests";
+			sourceTree = "<group>";
+		};
+		4ED12D242871D004008AFEFB /* bankApp-MVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D252871D004008AFEFB /* bankApp_MVVMUITests.swift */,
+				4ED12D272871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift */,
+			);
+			path = "bankApp-MVVMUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ED12D002871D000008AFEFB /* bankApp-MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED12D2B2871D004008AFEFB /* Build configuration list for PBXNativeTarget "bankApp-MVVM" */;
+			buildPhases = (
+				4ED12CFD2871D000008AFEFB /* Sources */,
+				4ED12CFE2871D000008AFEFB /* Frameworks */,
+				4ED12CFF2871D000008AFEFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bankApp-MVVM";
+			productName = "bankApp-MVVM";
+			productReference = 4ED12D012871D000008AFEFB /* bankApp-MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4ED12D162871D004008AFEFB /* bankApp-MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED12D2E2871D004008AFEFB /* Build configuration list for PBXNativeTarget "bankApp-MVVMTests" */;
+			buildPhases = (
+				4ED12D132871D004008AFEFB /* Sources */,
+				4ED12D142871D004008AFEFB /* Frameworks */,
+				4ED12D152871D004008AFEFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ED12D192871D004008AFEFB /* PBXTargetDependency */,
+			);
+			name = "bankApp-MVVMTests";
+			productName = "bankApp-MVVMTests";
+			productReference = 4ED12D172871D004008AFEFB /* bankApp-MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4ED12D202871D004008AFEFB /* bankApp-MVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED12D312871D004008AFEFB /* Build configuration list for PBXNativeTarget "bankApp-MVVMUITests" */;
+			buildPhases = (
+				4ED12D1D2871D004008AFEFB /* Sources */,
+				4ED12D1E2871D004008AFEFB /* Frameworks */,
+				4ED12D1F2871D004008AFEFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ED12D232871D004008AFEFB /* PBXTargetDependency */,
+			);
+			name = "bankApp-MVVMUITests";
+			productName = "bankApp-MVVMUITests";
+			productReference = 4ED12D212871D004008AFEFB /* bankApp-MVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ED12CF92871D000008AFEFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					4ED12D002871D000008AFEFB = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					4ED12D162871D004008AFEFB = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 4ED12D002871D000008AFEFB;
+					};
+					4ED12D202871D004008AFEFB = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 4ED12D002871D000008AFEFB;
+					};
+				};
+			};
+			buildConfigurationList = 4ED12CFC2871D000008AFEFB /* Build configuration list for PBXProject "bankApp-MVVM" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4ED12CF82871D000008AFEFB;
+			productRefGroup = 4ED12D022871D000008AFEFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ED12D002871D000008AFEFB /* bankApp-MVVM */,
+				4ED12D162871D004008AFEFB /* bankApp-MVVMTests */,
+				4ED12D202871D004008AFEFB /* bankApp-MVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4ED12CFF2871D000008AFEFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED12D112871D003008AFEFB /* LaunchScreen.storyboard in Resources */,
+				4ED12D0E2871D003008AFEFB /* Assets.xcassets in Resources */,
+				4ED12D0C2871D000008AFEFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED12D152871D004008AFEFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED12D1F2871D004008AFEFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4ED12CFD2871D000008AFEFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED12D092871D000008AFEFB /* ViewController.swift in Sources */,
+				4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */,
+				4ED12D072871D000008AFEFB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED12D132871D004008AFEFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED12D1C2871D004008AFEFB /* bankApp_MVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED12D1D2871D004008AFEFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED12D282871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift in Sources */,
+				4ED12D262871D004008AFEFB /* bankApp_MVVMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4ED12D192871D004008AFEFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ED12D002871D000008AFEFB /* bankApp-MVVM */;
+			targetProxy = 4ED12D182871D004008AFEFB /* PBXContainerItemProxy */;
+		};
+		4ED12D232871D004008AFEFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ED12D002871D000008AFEFB /* bankApp-MVVM */;
+			targetProxy = 4ED12D222871D004008AFEFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4ED12D0A2871D000008AFEFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ED12D0B2871D000008AFEFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ED12D102871D003008AFEFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4ED12D292871D004008AFEFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4ED12D2A2871D004008AFEFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4ED12D2C2871D004008AFEFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V2RQL28S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "bankApp-MVVM/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cemsertkaya.bankApp-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4ED12D2D2871D004008AFEFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V2RQL28S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "bankApp-MVVM/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cemsertkaya.bankApp-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4ED12D2F2871D004008AFEFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V2RQL28S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cemsertkaya.bankApp-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bankApp-MVVM.app/bankApp-MVVM";
+			};
+			name = Debug;
+		};
+		4ED12D302871D004008AFEFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V2RQL28S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cemsertkaya.bankApp-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bankApp-MVVM.app/bankApp-MVVM";
+			};
+			name = Release;
+		};
+		4ED12D322871D004008AFEFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V2RQL28S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cemsertkaya.bankApp-MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bankApp-MVVM";
+			};
+			name = Debug;
+		};
+		4ED12D332871D004008AFEFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9V2RQL28S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cemsertkaya.bankApp-MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bankApp-MVVM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ED12CFC2871D000008AFEFB /* Build configuration list for PBXProject "bankApp-MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED12D292871D004008AFEFB /* Debug */,
+				4ED12D2A2871D004008AFEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED12D2B2871D004008AFEFB /* Build configuration list for PBXNativeTarget "bankApp-MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED12D2C2871D004008AFEFB /* Debug */,
+				4ED12D2D2871D004008AFEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED12D2E2871D004008AFEFB /* Build configuration list for PBXNativeTarget "bankApp-MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED12D2F2871D004008AFEFB /* Debug */,
+				4ED12D302871D004008AFEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED12D312871D004008AFEFB /* Build configuration list for PBXNativeTarget "bankApp-MVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED12D322871D004008AFEFB /* Debug */,
+				4ED12D332871D004008AFEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4ED12CF92871D000008AFEFB /* Project object */;
+}
