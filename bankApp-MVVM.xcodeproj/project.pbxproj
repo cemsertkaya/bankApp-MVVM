@@ -16,6 +16,8 @@
 		4ED12D1C2871D004008AFEFB /* bankApp_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D1B2871D004008AFEFB /* bankApp_MVVMTests.swift */; };
 		4ED12D262871D004008AFEFB /* bankApp_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D252871D004008AFEFB /* bankApp_MVVMUITests.swift */; };
 		4ED12D282871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D272871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift */; };
+		4ED12D3C2871D428008AFEFB /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D3B2871D428008AFEFB /* Cancelable.swift */; };
+		4ED12D3E2871D446008AFEFB /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D3D2871D446008AFEFB /* ConnectionError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		4ED12D212871D004008AFEFB /* bankApp-MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bankApp-MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED12D252871D004008AFEFB /* bankApp_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankApp_MVVMUITests.swift; sourceTree = "<group>"; };
 		4ED12D272871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankApp_MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4ED12D3B2871D428008AFEFB /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
+		4ED12D3D2871D446008AFEFB /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,10 @@
 		4ED12D032871D000008AFEFB /* bankApp-MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				4ED12D042871D000008AFEFB /* AppDelegate.swift */,
-				4ED12D062871D000008AFEFB /* SceneDelegate.swift */,
-				4ED12D082871D000008AFEFB /* ViewController.swift */,
-				4ED12D0A2871D000008AFEFB /* Main.storyboard */,
-				4ED12D0D2871D003008AFEFB /* Assets.xcassets */,
-				4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */,
-				4ED12D122871D003008AFEFB /* Info.plist */,
+				4ED12D342871D1C0008AFEFB /* Application */,
+				4ED12D3A2871D413008AFEFB /* Common */,
+				4ED12D402871D4F5008AFEFB /* Presentation */,
+				4ED12D3F2871D4C6008AFEFB /* Resources */,
 			);
 			path = "bankApp-MVVM";
 			sourceTree = "<group>";
@@ -125,6 +126,43 @@
 				4ED12D272871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift */,
 			);
 			path = "bankApp-MVVMUITests";
+			sourceTree = "<group>";
+		};
+		4ED12D342871D1C0008AFEFB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D042871D000008AFEFB /* AppDelegate.swift */,
+				4ED12D062871D000008AFEFB /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4ED12D3A2871D413008AFEFB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D3B2871D428008AFEFB /* Cancelable.swift */,
+				4ED12D3D2871D446008AFEFB /* ConnectionError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4ED12D3F2871D4C6008AFEFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D0D2871D003008AFEFB /* Assets.xcassets */,
+				4ED12D122871D003008AFEFB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4ED12D402871D4F5008AFEFB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D0A2871D000008AFEFB /* Main.storyboard */,
+				4ED12D082871D000008AFEFB /* ViewController.swift */,
+				4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED12D092871D000008AFEFB /* ViewController.swift in Sources */,
+				4ED12D3C2871D428008AFEFB /* Cancelable.swift in Sources */,
 				4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */,
+				4ED12D3E2871D446008AFEFB /* ConnectionError.swift in Sources */,
 				4ED12D072871D000008AFEFB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
