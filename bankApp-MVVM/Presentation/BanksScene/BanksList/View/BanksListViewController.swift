@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import Resolver
 
-class BankListViewController: UIViewController {
+class BanksListViewController: UIViewController {
 
+    @Injected private var viewModel : BankListViewModel
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
