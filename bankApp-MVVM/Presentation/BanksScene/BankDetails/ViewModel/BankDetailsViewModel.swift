@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+
+protocol BankDetailsViewModel
+{
+    
+}
+final class DefaultBankDetailsViewModel : BankDetailsViewModel
+{
+    
+}

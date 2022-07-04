@@ -12,17 +12,11 @@ import UIKit
 final class BanksSceneDIContainer
 {
     
-    struct Dependencies
-    {
-        let apiDataTransferService: DataTransferService
-    }
+    struct Dependencies {let apiDataTransferService: DataTransferService}
     
     private let dependencies: Dependencies
     
-    init(dependencies: Dependencies)
-    {
-        self.dependencies = dependencies
-    }
+    init(dependencies: Dependencies) {self.dependencies = dependencies}
 
     // MARK: - Use Cases
     func makeFetchBanksUseCase() -> FetchBanksUseCase {return DefaultFetchBanksUseCase(banksRepository: makeBankRepository())}
@@ -34,7 +28,7 @@ final class BanksSceneDIContainer
     
     func makeBanksListViewController(actions: BanksListViewModelActions) -> BanksListViewController
     {
-        return BanksListViewController()
+        return BanksListViewController.create(with: makeBanksListViewModel(actions: actions))
     }
     
     func makeBanksListViewModel(actions: BanksListViewModelActions) -> BanksListViewModel
@@ -53,7 +47,6 @@ final class BanksSceneDIContainer
     {
         return DefaultBankDetailsViewModel()
     }
-
     
     // MARK: - Flow Coordinators
     func makeBanksSearchFlowCoordinator(navigationController: UINavigationController) -> BanksFlowCoordinator

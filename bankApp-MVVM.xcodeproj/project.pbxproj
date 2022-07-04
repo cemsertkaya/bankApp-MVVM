@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D042871D000008AFEFB /* AppDelegate.swift */; };
-		4ED12D072871D000008AFEFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D062871D000008AFEFB /* SceneDelegate.swift */; };
 		4ED12D0E2871D003008AFEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0D2871D003008AFEFB /* Assets.xcassets */; };
 		4ED12D112871D003008AFEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */; };
 		4ED12D1C2871D004008AFEFB /* bankApp_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D1B2871D004008AFEFB /* bankApp_MVVMTests.swift */; };
@@ -16,19 +15,30 @@
 		4ED12D282871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D272871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift */; };
 		4ED12D3C2871D428008AFEFB /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D3B2871D428008AFEFB /* Cancelable.swift */; };
 		4ED12D3E2871D446008AFEFB /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D3D2871D446008AFEFB /* ConnectionError.swift */; };
-		4ED12D4A2871D5EC008AFEFB /* BankListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D492871D5EC008AFEFB /* BankListViewController.storyboard */; };
-		4ED12D4C2871D611008AFEFB /* BankListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D4B2871D611008AFEFB /* BankListViewController.swift */; };
-		4ED12D4E2871D629008AFEFB /* BankListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D4D2871D629008AFEFB /* BankListItemViewModel.swift */; };
-		4ED12D502871D635008AFEFB /* BankListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D4F2871D635008AFEFB /* BankListViewModel.swift */; };
+		4ED12D4C2871D611008AFEFB /* BanksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D4B2871D611008AFEFB /* BanksListViewController.swift */; };
+		4ED12D4E2871D629008AFEFB /* BanksListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D4D2871D629008AFEFB /* BanksListItemViewModel.swift */; };
+		4ED12D502871D635008AFEFB /* BanksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D4F2871D635008AFEFB /* BanksListViewModel.swift */; };
 		4ED12D522871D665008AFEFB /* BankDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D512871D665008AFEFB /* BankDetailsViewController.storyboard */; };
 		4ED12D542871D679008AFEFB /* BankDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D532871D679008AFEFB /* BankDetailsViewController.swift */; };
 		4ED12D562871D68F008AFEFB /* BankDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D552871D68F008AFEFB /* BankDetailsViewModel.swift */; };
 		4ED12D5B2871D7F9008AFEFB /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D5A2871D7F9008AFEFB /* Bank.swift */; };
 		4ED12D5E2871D8D4008AFEFB /* BanksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D5D2871D8D4008AFEFB /* BanksRepository.swift */; };
 		4ED12D622871DC61008AFEFB /* FetchBanksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D612871DC61008AFEFB /* FetchBanksUseCase.swift */; };
-		4ED12D652871DE57008AFEFB /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 4ED12D642871DE57008AFEFB /* Resolver */; };
-		4ED12D672871DE57008AFEFB /* Resolver-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4ED12D662871DE57008AFEFB /* Resolver-Dynamic */; };
-		4ED12D692871DE57008AFEFB /* Resolver-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 4ED12D682871DE57008AFEFB /* Resolver-Static */; };
+		4ED12D7C2871E3FD008AFEFB /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D7B2871E3FD008AFEFB /* AppConfiguration.swift */; };
+		4ED12D7E2871E437008AFEFB /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D7D2871E437008AFEFB /* AppFlowCoordinator.swift */; };
+		4ED12D812871E4DD008AFEFB /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D802871E4DD008AFEFB /* AppDIContainer.swift */; };
+		4ED12D832871E5B3008AFEFB /* BanksSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D822871E5B3008AFEFB /* BanksSceneDIContainer.swift */; };
+		4ED12D852871E818008AFEFB /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D842871E818008AFEFB /* DataTransferService.swift */; };
+		4ED12D872871E834008AFEFB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D862871E834008AFEFB /* Endpoint.swift */; };
+		4ED12D892871E858008AFEFB /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D882871E858008AFEFB /* NetworkConfig.swift */; };
+		4ED12D8B2871E871008AFEFB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D8A2871E871008AFEFB /* NetworkService.swift */; };
+		4ED12D8F2871EB72008AFEFB /* DefaultBanksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D8E2871EB72008AFEFB /* DefaultBanksRepository.swift */; };
+		4ED12D932871EC83008AFEFB /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D922871EC83008AFEFB /* APIEndpoints.swift */; };
+		4ED12D952871ED83008AFEFB /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D942871ED83008AFEFB /* RepositoryTask.swift */; };
+		4ED12D972872F26B008AFEFB /* BanksFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D962872F26B008AFEFB /* BanksFlowCoordinator.swift */; };
+		4ED12D9B2872FAA3008AFEFB /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D9A2872FAA3008AFEFB /* Observer.swift */; };
+		4ED12D9F28732024008AFEFB /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D9E28732024008AFEFB /* StoryboardInstantiable.swift */; };
+		4ED12DA128733E34008AFEFB /* BanksListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12DA028733E34008AFEFB /* BanksListViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +58,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4ED12D742871E2D3008AFEFB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4ED12D012871D000008AFEFB /* bankApp-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bankApp-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED12D042871D000008AFEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4ED12D062871D000008AFEFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4ED12D0D2871D003008AFEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ED12D102871D003008AFEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ED12D122871D003008AFEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,16 +84,30 @@
 		4ED12D272871D004008AFEFB /* bankApp_MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankApp_MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4ED12D3B2871D428008AFEFB /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
 		4ED12D3D2871D446008AFEFB /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
-		4ED12D492871D5EC008AFEFB /* BankListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BankListViewController.storyboard; sourceTree = "<group>"; };
-		4ED12D4B2871D611008AFEFB /* BankListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListViewController.swift; sourceTree = "<group>"; };
-		4ED12D4D2871D629008AFEFB /* BankListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListItemViewModel.swift; sourceTree = "<group>"; };
-		4ED12D4F2871D635008AFEFB /* BankListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListViewModel.swift; sourceTree = "<group>"; };
+		4ED12D4B2871D611008AFEFB /* BanksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListViewController.swift; sourceTree = "<group>"; };
+		4ED12D4D2871D629008AFEFB /* BanksListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListItemViewModel.swift; sourceTree = "<group>"; };
+		4ED12D4F2871D635008AFEFB /* BanksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListViewModel.swift; sourceTree = "<group>"; };
 		4ED12D512871D665008AFEFB /* BankDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BankDetailsViewController.storyboard; sourceTree = "<group>"; };
 		4ED12D532871D679008AFEFB /* BankDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsViewController.swift; sourceTree = "<group>"; };
 		4ED12D552871D68F008AFEFB /* BankDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsViewModel.swift; sourceTree = "<group>"; };
 		4ED12D5A2871D7F9008AFEFB /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		4ED12D5D2871D8D4008AFEFB /* BanksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksRepository.swift; sourceTree = "<group>"; };
 		4ED12D612871DC61008AFEFB /* FetchBanksUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBanksUseCase.swift; sourceTree = "<group>"; };
+		4ED12D7B2871E3FD008AFEFB /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		4ED12D7D2871E437008AFEFB /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		4ED12D802871E4DD008AFEFB /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		4ED12D822871E5B3008AFEFB /* BanksSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksSceneDIContainer.swift; sourceTree = "<group>"; };
+		4ED12D842871E818008AFEFB /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		4ED12D862871E834008AFEFB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		4ED12D882871E858008AFEFB /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		4ED12D8A2871E871008AFEFB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4ED12D8E2871EB72008AFEFB /* DefaultBanksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBanksRepository.swift; sourceTree = "<group>"; };
+		4ED12D922871EC83008AFEFB /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		4ED12D942871ED83008AFEFB /* RepositoryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTask.swift; sourceTree = "<group>"; };
+		4ED12D962872F26B008AFEFB /* BanksFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksFlowCoordinator.swift; sourceTree = "<group>"; };
+		4ED12D9A2872FAA3008AFEFB /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		4ED12D9E28732024008AFEFB /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		4ED12DA028733E34008AFEFB /* BanksListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BanksListViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED12D672871DE57008AFEFB /* Resolver-Dynamic in Frameworks */,
-				4ED12D692871DE57008AFEFB /* Resolver-Static in Frameworks */,
-				4ED12D652871DE57008AFEFB /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +142,7 @@
 				4ED12D1A2871D004008AFEFB /* bankApp-MVVMTests */,
 				4ED12D242871D004008AFEFB /* bankApp-MVVMUITests */,
 				4ED12D022871D000008AFEFB /* Products */,
+				4ED12D752871E2E7008AFEFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,10 +160,12 @@
 			isa = PBXGroup;
 			children = (
 				4ED12D342871D1C0008AFEFB /* Application */,
-				4ED12D3A2871D413008AFEFB /* Common */,
-				4ED12D402871D4F5008AFEFB /* Presentation */,
-				4ED12D3F2871D4C6008AFEFB /* Resources */,
 				4ED12D592871D7E6008AFEFB /* Domain */,
+				4ED12D8C2871EAEC008AFEFB /* Data */,
+				4ED12D402871D4F5008AFEFB /* Presentation */,
+				4ED12D3A2871D413008AFEFB /* Common */,
+				4ED12D792871E39E008AFEFB /* Infrastructure */,
+				4ED12D3F2871D4C6008AFEFB /* Resources */,
 			);
 			path = "bankApp-MVVM";
 			sourceTree = "<group>";
@@ -155,7 +191,9 @@
 			isa = PBXGroup;
 			children = (
 				4ED12D042871D000008AFEFB /* AppDelegate.swift */,
-				4ED12D062871D000008AFEFB /* SceneDelegate.swift */,
+				4ED12D7B2871E3FD008AFEFB /* AppConfiguration.swift */,
+				4ED12D7D2871E437008AFEFB /* AppFlowCoordinator.swift */,
+				4ED12D7F2871E4BA008AFEFB /* DIContainer */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -181,6 +219,7 @@
 		4ED12D402871D4F5008AFEFB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4ED12D992872FA91008AFEFB /* Utils */,
 				4ED12D422871D552008AFEFB /* BanksScene */,
 				4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */,
 			);
@@ -190,6 +229,7 @@
 		4ED12D422871D552008AFEFB /* BanksScene */ = {
 			isa = PBXGroup;
 			children = (
+				4ED12D982872F272008AFEFB /* Flows */,
 				4ED12D432871D567008AFEFB /* BanksList */,
 				4ED12D442871D57D008AFEFB /* BankDetails */,
 			);
@@ -234,8 +274,8 @@
 		4ED12D472871D5AC008AFEFB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4ED12D492871D5EC008AFEFB /* BankListViewController.storyboard */,
-				4ED12D4B2871D611008AFEFB /* BankListViewController.swift */,
+				4ED12D4B2871D611008AFEFB /* BanksListViewController.swift */,
+				4ED12DA028733E34008AFEFB /* BanksListViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,8 +283,8 @@
 		4ED12D482871D5B1008AFEFB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4ED12D4D2871D629008AFEFB /* BankListItemViewModel.swift */,
-				4ED12D4F2871D635008AFEFB /* BankListViewModel.swift */,
+				4ED12D4D2871D629008AFEFB /* BanksListItemViewModel.swift */,
+				4ED12D4F2871D635008AFEFB /* BanksListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -291,6 +331,84 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		4ED12D752871E2E7008AFEFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4ED12D792871E39E008AFEFB /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D7A2871E3BC008AFEFB /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		4ED12D7A2871E3BC008AFEFB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D842871E818008AFEFB /* DataTransferService.swift */,
+				4ED12D862871E834008AFEFB /* Endpoint.swift */,
+				4ED12D882871E858008AFEFB /* NetworkConfig.swift */,
+				4ED12D8A2871E871008AFEFB /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4ED12D7F2871E4BA008AFEFB /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D802871E4DD008AFEFB /* AppDIContainer.swift */,
+				4ED12D822871E5B3008AFEFB /* BanksSceneDIContainer.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		4ED12D8C2871EAEC008AFEFB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D912871EC75008AFEFB /* Network */,
+				4ED12D8D2871EB01008AFEFB /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4ED12D8D2871EB01008AFEFB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D8E2871EB72008AFEFB /* DefaultBanksRepository.swift */,
+				4ED12D942871ED83008AFEFB /* RepositoryTask.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		4ED12D912871EC75008AFEFB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D922871EC83008AFEFB /* APIEndpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4ED12D982872F272008AFEFB /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D962872F26B008AFEFB /* BanksFlowCoordinator.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		4ED12D992872FA91008AFEFB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4ED12D9A2872FAA3008AFEFB /* Observer.swift */,
+				4ED12D9E28732024008AFEFB /* StoryboardInstantiable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,6 +419,7 @@
 				4ED12CFD2871D000008AFEFB /* Sources */,
 				4ED12CFE2871D000008AFEFB /* Frameworks */,
 				4ED12CFF2871D000008AFEFB /* Resources */,
+				4ED12D742871E2D3008AFEFB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,9 +427,6 @@
 			);
 			name = "bankApp-MVVM";
 			packageProductDependencies = (
-				4ED12D642871DE57008AFEFB /* Resolver */,
-				4ED12D662871DE57008AFEFB /* Resolver-Dynamic */,
-				4ED12D682871DE57008AFEFB /* Resolver-Static */,
 			);
 			productName = "bankApp-MVVM";
 			productReference = 4ED12D012871D000008AFEFB /* bankApp-MVVM.app */;
@@ -385,7 +501,6 @@
 			);
 			mainGroup = 4ED12CF82871D000008AFEFB;
 			packageReferences = (
-				4ED12D632871DE57008AFEFB /* XCRemoteSwiftPackageReference "Resolver" */,
 			);
 			productRefGroup = 4ED12D022871D000008AFEFB /* Products */;
 			projectDirPath = "";
@@ -405,8 +520,8 @@
 			files = (
 				4ED12D522871D665008AFEFB /* BankDetailsViewController.storyboard in Resources */,
 				4ED12D112871D003008AFEFB /* LaunchScreen.storyboard in Resources */,
-				4ED12D4A2871D5EC008AFEFB /* BankListViewController.storyboard in Resources */,
 				4ED12D0E2871D003008AFEFB /* Assets.xcassets in Resources */,
+				4ED12DA128733E34008AFEFB /* BanksListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,17 +547,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED12D622871DC61008AFEFB /* FetchBanksUseCase.swift in Sources */,
-				4ED12D4C2871D611008AFEFB /* BankListViewController.swift in Sources */,
-				4ED12D4E2871D629008AFEFB /* BankListItemViewModel.swift in Sources */,
+				4ED12D4C2871D611008AFEFB /* BanksListViewController.swift in Sources */,
+				4ED12D812871E4DD008AFEFB /* AppDIContainer.swift in Sources */,
+				4ED12D932871EC83008AFEFB /* APIEndpoints.swift in Sources */,
+				4ED12D832871E5B3008AFEFB /* BanksSceneDIContainer.swift in Sources */,
+				4ED12D4E2871D629008AFEFB /* BanksListItemViewModel.swift in Sources */,
+				4ED12D7C2871E3FD008AFEFB /* AppConfiguration.swift in Sources */,
 				4ED12D562871D68F008AFEFB /* BankDetailsViewModel.swift in Sources */,
 				4ED12D5E2871D8D4008AFEFB /* BanksRepository.swift in Sources */,
 				4ED12D3C2871D428008AFEFB /* Cancelable.swift in Sources */,
 				4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */,
+				4ED12D8B2871E871008AFEFB /* NetworkService.swift in Sources */,
+				4ED12D9F28732024008AFEFB /* StoryboardInstantiable.swift in Sources */,
+				4ED12D872871E834008AFEFB /* Endpoint.swift in Sources */,
 				4ED12D3E2871D446008AFEFB /* ConnectionError.swift in Sources */,
 				4ED12D542871D679008AFEFB /* BankDetailsViewController.swift in Sources */,
+				4ED12D892871E858008AFEFB /* NetworkConfig.swift in Sources */,
+				4ED12D9B2872FAA3008AFEFB /* Observer.swift in Sources */,
+				4ED12D972872F26B008AFEFB /* BanksFlowCoordinator.swift in Sources */,
+				4ED12D7E2871E437008AFEFB /* AppFlowCoordinator.swift in Sources */,
 				4ED12D5B2871D7F9008AFEFB /* Bank.swift in Sources */,
-				4ED12D502871D635008AFEFB /* BankListViewModel.swift in Sources */,
-				4ED12D072871D000008AFEFB /* SceneDelegate.swift in Sources */,
+				4ED12D502871D635008AFEFB /* BanksListViewModel.swift in Sources */,
+				4ED12D852871E818008AFEFB /* DataTransferService.swift in Sources */,
+				4ED12D8F2871EB72008AFEFB /* DefaultBanksRepository.swift in Sources */,
+				4ED12D952871ED83008AFEFB /* RepositoryTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +668,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -594,7 +722,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -607,18 +735,21 @@
 		4ED12D2C2871D004008AFEFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "https://raw.githubusercontent.com/fatiha380/mockjson/main/bankdata";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9V2RQL28S6;
+				DEVELOPMENT_TEAM = FX48YA4D8H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "bankApp-MVVM/Info.plist";
+				INFOPLIST_FILE = "bankApp-MVVM/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = BanksListViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,18 +766,21 @@
 		4ED12D2D2871D004008AFEFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "https://raw.githubusercontent.com/fatiha380/mockjson/main/bankdata";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9V2RQL28S6;
+				DEVELOPMENT_TEAM = FX48YA4D8H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "bankApp-MVVM/Info.plist";
+				INFOPLIST_FILE = "bankApp-MVVM/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = BanksListViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -776,35 +910,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		4ED12D632871DE57008AFEFB /* XCRemoteSwiftPackageReference "Resolver" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hmlongco/Resolver";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4ED12D642871DE57008AFEFB /* Resolver */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4ED12D632871DE57008AFEFB /* XCRemoteSwiftPackageReference "Resolver" */;
-			productName = Resolver;
-		};
-		4ED12D662871DE57008AFEFB /* Resolver-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4ED12D632871DE57008AFEFB /* XCRemoteSwiftPackageReference "Resolver" */;
-			productName = "Resolver-Dynamic";
-		};
-		4ED12D682871DE57008AFEFB /* Resolver-Static */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4ED12D632871DE57008AFEFB /* XCRemoteSwiftPackageReference "Resolver" */;
-			productName = "Resolver-Static";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4ED12CF92871D000008AFEFB /* Project object */;
 }

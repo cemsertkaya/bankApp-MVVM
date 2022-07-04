@@ -6,27 +6,30 @@
 //
 
 import UIKit
-import Resolver
 
-class BanksListViewController: UIViewController {
 
-    @Injected private var viewModel : BankListViewModel
+final class BanksListViewController: UIViewController, StoryboardInstantiable
+{
+    private var viewModel : BanksListViewModel!
     
-    override func viewDidLoad() {
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
+        print("cemDidLoad")
+        
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    static func create(with viewModel: BanksListViewModel) -> BanksListViewController
+    {
+        let view = BanksListViewController.instantiateViewController()
+        view.viewModel = viewModel
+        print("cem")
+        return view
     }
-    */
 
 }
+
+

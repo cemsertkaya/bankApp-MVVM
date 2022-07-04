@@ -14,4 +14,15 @@ protocol FetchBanksUseCase
 
 final class DefaultFetchBanksUseCase : FetchBanksUseCase
 {
+    private let banksRepository : BanksRepository
+    
+    init(banksRepository : BanksRepository) {self.banksRepository = banksRepository}
+    
+    func execute(completion: @escaping (Result<[Bank], Error>) -> Void) -> Cancellable?
+    {
+        return banksRepository.fetchBanksList { result in
+            completion(result)
+        }
+    }
+    
 }
