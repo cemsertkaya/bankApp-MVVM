@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E8E487F2874269300B786A0 /* UI+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E487E2874269300B786A0 /* UI+.swift */; };
+		4E8E4881287427BC00B786A0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E4880287427BC00B786A0 /* TableViewCell.swift */; };
 		4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D042871D000008AFEFB /* AppDelegate.swift */; };
 		4ED12D0E2871D003008AFEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0D2871D003008AFEFB /* Assets.xcassets */; };
 		4ED12D112871D003008AFEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */; };
@@ -72,6 +74,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E8E487E2874269300B786A0 /* UI+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+.swift"; sourceTree = "<group>"; };
+		4E8E4880287427BC00B786A0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4ED12D012871D000008AFEFB /* bankApp-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bankApp-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED12D042871D000008AFEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ED12D0D2871D003008AFEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -276,6 +280,7 @@
 			children = (
 				4ED12D4B2871D611008AFEFB /* BanksListViewController.swift */,
 				4ED12DA028733E34008AFEFB /* BanksListViewController.storyboard */,
+				4E8E4880287427BC00B786A0 /* TableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -405,6 +410,7 @@
 			children = (
 				4ED12D9A2872FAA3008AFEFB /* Observer.swift */,
 				4ED12D9E28732024008AFEFB /* StoryboardInstantiable.swift */,
+				4E8E487E2874269300B786A0 /* UI+.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -558,6 +564,7 @@
 				4ED12D3C2871D428008AFEFB /* Cancelable.swift in Sources */,
 				4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */,
 				4ED12D8B2871E871008AFEFB /* NetworkService.swift in Sources */,
+				4E8E4881287427BC00B786A0 /* TableViewCell.swift in Sources */,
 				4ED12D9F28732024008AFEFB /* StoryboardInstantiable.swift in Sources */,
 				4ED12D872871E834008AFEFB /* Endpoint.swift in Sources */,
 				4ED12D3E2871D446008AFEFB /* ConnectionError.swift in Sources */,
@@ -571,6 +578,7 @@
 				4ED12D852871E818008AFEFB /* DataTransferService.swift in Sources */,
 				4ED12D8F2871EB72008AFEFB /* DefaultBanksRepository.swift in Sources */,
 				4ED12D952871ED83008AFEFB /* RepositoryTask.swift in Sources */,
+				4E8E487F2874269300B786A0 /* UI+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,7 +753,6 @@
 				INFOPLIST_FILE = "bankApp-MVVM/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = BanksListViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -776,7 +783,6 @@
 				INFOPLIST_FILE = "bankApp-MVVM/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = BanksListViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
