@@ -98,7 +98,7 @@ final class DefaultBanksListViewModel : BanksListViewModel
     {
         self.error.value = error.isInternetConnectionError ?
             NSLocalizedString("No internet connection", comment: "") :
-            NSLocalizedString("Failed loading movies", comment: "")
+            NSLocalizedString("Failed loading banks", comment: "")
     }
 }
 

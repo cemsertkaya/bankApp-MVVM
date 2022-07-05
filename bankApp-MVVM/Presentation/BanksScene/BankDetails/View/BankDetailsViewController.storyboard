@@ -9,26 +9,58 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Bank Details View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="BankDetailsViewController" customModule="bankApp_MVVM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="E9J-QF-Ig1">
+                                <rect key="frame" x="0.0" y="44" width="375" height="504"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="504" id="iVa-yw-yFX"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wu8-ZK-iek">
+                                <rect key="frame" x="66" y="591" width="243" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="Uea-Eg-FEE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go with Navigation"/>
+                                <connections>
+                                    <action selector="goWithNavigationButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="T6f-dF-n16"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Wu8-ZK-iek" secondAttribute="bottom" constant="45" id="8nC-Dq-QLx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Wu8-ZK-iek" secondAttribute="trailing" constant="66" id="AjG-co-pMm"/>
+                            <constraint firstItem="Wu8-ZK-iek" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="66" id="DKw-GA-3Bh"/>
+                            <constraint firstItem="E9J-QF-Ig1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Lp4-Tz-rqq"/>
+                            <constraint firstItem="E9J-QF-Ig1" firstAttribute="centerX" secondItem="Wu8-ZK-iek" secondAttribute="centerX" id="clA-5a-CbK"/>
+                            <constraint firstItem="E9J-QF-Ig1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="esa-vi-vzK"/>
+                            <constraint firstItem="Wu8-ZK-iek" firstAttribute="top" secondItem="E9J-QF-Ig1" secondAttribute="bottom" constant="43" id="ytk-E7-hKg"/>
+                        </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="E9J-QF-Ig1" id="0Bd-1l-4T5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="83"/>
+            <point key="canvasLocation" x="132" y="82.3088455772114"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

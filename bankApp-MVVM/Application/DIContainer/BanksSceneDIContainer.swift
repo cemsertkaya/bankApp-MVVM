@@ -40,12 +40,12 @@ final class BanksSceneDIContainer
     
     func makeBankDetailsViewController(bank: Bank) -> BankDetailsViewController
     {
-        return BankDetailsViewController()
+        return BankDetailsViewController.create(with: makeBanksDetailsViewModel(bank: bank))
     }
     
     func makeBanksDetailsViewModel(bank: Bank) -> BankDetailsViewModel
     {
-        return DefaultBankDetailsViewModel()
+        return DefaultBankDetailsViewModel(bank: bank)
     }
     
     // MARK: - Flow Coordinators
