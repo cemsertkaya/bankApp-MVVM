@@ -37,6 +37,8 @@ extension BankDetailsViewController: UITableViewDelegate, UITableViewDataSource
     {
         let cell = UITableViewCell()
         cell.textLabel?.text = viewModel.getContent(index: indexPath.row)
+        
+        if indexPath.row == 9 || indexPath.row == 8 {cell.textLabel?.font =  UIFont.systemFont(ofSize: 10)}
         return cell
     }
     
