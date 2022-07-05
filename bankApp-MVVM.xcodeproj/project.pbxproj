@@ -223,9 +223,9 @@
 		4ED12D402871D4F5008AFEFB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */,
 				4ED12D992872FA91008AFEFB /* Utils */,
 				4ED12D422871D552008AFEFB /* BanksScene */,
-				4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
