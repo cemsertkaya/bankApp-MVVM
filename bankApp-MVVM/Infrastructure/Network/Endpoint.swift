@@ -88,7 +88,7 @@ extension Requestable {
     
     func url(with config: NetworkConfigurable) throws -> URL {
 
-        let baseURL = config.baseURL.absoluteString.last != "/" ? config.baseURL.absoluteString + "/" : config.baseURL.absoluteString
+        let baseURL = config.baseURL.absoluteString
         let endpoint = isFullPath ? path : baseURL.appending(path)
         
         guard var urlComponents = URLComponents(string: endpoint) else { throw RequestGenerationError.components }

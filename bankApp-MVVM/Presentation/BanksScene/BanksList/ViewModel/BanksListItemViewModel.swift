@@ -10,8 +10,21 @@ import Foundation
 
 struct BanksListItemViewModel : Equatable
 {
-    let title: String
-    let overview: String
-    let releaseDate: String
-    let posterImagePath: String?
+    let city: String
+    let state: String
+    let type : DcBANKATIPI
+    let address : String?
+    let closestATM : String?
+}
+
+extension BanksListItemViewModel {
+
+    init(bank: Bank)
+    {
+        self.city = bank.dcSEHIR ?? ""
+        self.state =  bank.dcILCE ?? ""
+        self.type =  bank.dcBANKATIPI ?? .normal
+        self.address =  bank.dcADRES ?? ""
+        self.closestATM =  bank.dcENYAKIMATM ?? ""
+    }
 }

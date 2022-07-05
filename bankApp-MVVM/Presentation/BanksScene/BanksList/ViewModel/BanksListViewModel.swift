@@ -51,7 +51,7 @@ final class DefaultBanksListViewModel : BanksListViewModel
     }
     
     private var banks: [Bank] = []
-    
+    private var banksLoadTask: Cancellable? { willSet { banksLoadTask?.cancel() } }
     
     // MARK: - OUTPUT
     let items: Observable<[BanksListItemViewModel]> = Observable([])
@@ -64,13 +64,48 @@ final class DefaultBanksListViewModel : BanksListViewModel
     let errorTitle = NSLocalizedString("Error", comment: "")
     let searchBarPlaceholder = NSLocalizedString("Search Banks", comment: "")
     
+
     
+    private func appendBanks(_ banks: [Bank])
+    {
+        self.banks = banks
+        for bank in self.banks
+        {
+            self.items.value.append(BanksListItemViewModel(bank: bank))
+        }
+    }
+    
+    private func load(loading: BanksListViewModelLoading)
+    {
+        self.loading.value = loading
+        banksLoadTask = fetchBanksUseCase.execute(
+           
+            completion: { result in
+                switch result
+                {
+                    case .success(let banks):
+                        self.appendBanks(banks)
+                    case .failure(let error):
+                        self.handle(error: error)
+                }
+                self.loading.value = .none
+        })
+    }
+    
+    private func handle(error: Error)
+    {
+        self.error.value = error.isInternetConnectionError ?
+            NSLocalizedString("No internet connection", comment: "") :
+            NSLocalizedString("Failed loading movies", comment: "")
+    }
 }
+
+
 
 
 extension DefaultBanksListViewModel
 {
-    func viewDidLoad() {}
+    func viewDidLoad() {load(loading: .fullScreen)}
     
     func didSearch(query: String) {}
     
@@ -78,3 +113,7 @@ extension DefaultBanksListViewModel
     
     func didSelectItem(at index: Int) {actions.showBankDetails(banks[index])}
 }
+
+
+
+

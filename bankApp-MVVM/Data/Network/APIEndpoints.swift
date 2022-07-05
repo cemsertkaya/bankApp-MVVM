@@ -9,5 +9,5 @@ import Foundation
 
 struct APIEndpoints
 {
-    static func getBanks() -> Endpoint<Bank> {return Endpoint(path: "",method: .get)}
+    static func getBanks() -> Endpoint<[Bank]> {return Endpoint(path: "",method: .get)}
 }

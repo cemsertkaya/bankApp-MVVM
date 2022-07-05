@@ -22,21 +22,20 @@ extension DefaultBanksRepository: BanksRepository
 {
     func fetchBanksList(completion: @escaping (Result<[Bank], Error>) -> Void) -> Cancellable?
     {
+        
+    
         let task = RepositoryTask()
         
-
-        let endpoint = APIEndpoints.getBanks()
         
-        /*
-        task.networkTask = self.dataTransferService.request(with: endpoint) { result in
+        task.networkTask = self.dataTransferService.request(with:  APIEndpoints.getBanks()) { result in
             switch result
             {
-                case .success():
-                    completion(.success(result))
-                case .failure():
+                case .success(let moviePage):
+                    completion(.success(moviePage))
+                case .failure(let error):
                     completion(.failure(error))
             }
-        }*/
+        }
         
         return task
     }
