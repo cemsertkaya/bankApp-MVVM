@@ -76,6 +76,7 @@ final class DefaultBanksListViewModel : BanksListViewModel
         {
             self.items.value.append(BanksListItemViewModel(bank: bank))
         }
+        tempItems.value = items.value
     }
     
     private func load(loading: BanksListViewModelLoading)
@@ -110,19 +111,15 @@ extension DefaultBanksListViewModel
 {
     func viewDidLoad() {load(loading: .fullScreen)}
     
-    func didSearch(query: String)
-    {
-        tempItems.value = items.value
-        items.value = items.value.filter { $0.city.lowercased().contains(query.lowercased())}
+    func didSearch(query: String) {
+        print(query)
+        items.value = tempItems.value.filter {$0.city.localizedLowercase.contains(query.localizedLowercase)}
+        
     }
     
     func didCancelSearch() {items.value = tempItems.value}
     
-    func didSelectItem(at index: Int)
-    {
-        actions.showBankDetails(banks[index])
-        
-    }
+    func didSelectItem(at index: Int) {actions.showBankDetails(banks[index])}
     
     func refreshBanks()
     {
