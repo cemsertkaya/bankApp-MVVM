@@ -33,6 +33,7 @@ protocol BanksListViewModelOutput
     var query: Observable<String> { get }
     var error: Observable<String> { get }
     var isEmpty: Bool { get }
+    var screenTitle : String { get }
     var errorTitle: String { get }
 }
 
@@ -52,6 +53,7 @@ final class DefaultBanksListViewModel : BanksListViewModel
     
     private var banks: [Bank] = []
     private var banksLoadTask: Cancellable? { willSet { banksLoadTask?.cancel() } }
+    let tempItems: Observable<[BanksListItemViewModel]> = Observable([])
     
     // MARK: - OUTPUT
     let items: Observable<[BanksListItemViewModel]> = Observable([])
@@ -59,9 +61,9 @@ final class DefaultBanksListViewModel : BanksListViewModel
     let query: Observable<String> = Observable("")
     let error: Observable<String> = Observable("")
     var isEmpty: Bool { return items.value.isEmpty }
-    let screenTitle = NSLocalizedString("Banks", comment: "")
     let emptyDataTitle = NSLocalizedString("Search results", comment: "")
     let errorTitle = NSLocalizedString("Error", comment: "")
+    let screenTitle = NSLocalizedString("Banks", comment: "")
     let searchBarPlaceholder = NSLocalizedString("Search Banks", comment: "")
     
 
@@ -107,9 +109,13 @@ extension DefaultBanksListViewModel
 {
     func viewDidLoad() {load(loading: .fullScreen)}
     
-    func didSearch(query: String) {}
+    func didSearch(query: String)
+    {
+        tempItems.value = items.value
+        items.value = items.value.filter { $0.city.lowercased().contains(query.lowercased())}
+    }
     
-    func didCancelSearch() {}
+    func didCancelSearch() {items.value = tempItems.value}
     
     func didSelectItem(at index: Int) {actions.showBankDetails(banks[index])}
 }

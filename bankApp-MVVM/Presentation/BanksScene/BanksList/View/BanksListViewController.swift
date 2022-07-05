@@ -17,8 +17,11 @@ final class BanksListViewController: UIViewController, StoryboardInstantiable
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        setupViews()
         setUpTableView()
+        setUpSearchBar()
         viewModel.viewDidLoad()
+        bind(to: viewModel)
         
         // Do any additional setup after loading the view.
     }
@@ -33,18 +36,29 @@ final class BanksListViewController: UIViewController, StoryboardInstantiable
     private func bind(to viewModel: BanksListViewModel)
     {
         viewModel.items.observe(on: self) { [weak self] _ in self?.updateItems() }
-        //viewModel.loading.observe(on: self) { [weak self] in self?.updateLoading($0) }
-        //viewModel.query.observe(on: self) { [weak self] in self?.updateSearchQuery($0) }
-        //viewModel.error.observe(on: self) { [weak self] in self?.showError($0) }
+        viewModel.loading.observe(on: self) { [weak self] in self?.updateLoading($0) }
     }
 
+    private func setupViews() {title = viewModel.screenTitle}
     
+    private func updateItems() {self.tableView.reloadData()}
 
+    private func updateLoading(_ loading: BanksListViewModelLoading?) {
+        
+        CustomLoadingView.hide()
+
+        switch loading
+        {
+            case .fullScreen: CustomLoadingView.show()
+            case .nextPage: CustomLoadingView.hide()
+            case .none: CustomLoadingView.hide()
+        }
+    }
 }
 
 extension BanksListViewController: UITableViewDelegate, UITableViewDataSource
 {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{return 50}
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{return viewModel.items.value.count}
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
@@ -55,7 +69,7 @@ extension BanksListViewController: UITableViewDelegate, UITableViewDataSource
             return UITableViewCell()
         }
         
-        //cell.configure(with: viewModel.items.value[indexPath.row], posterImagesRepository: posterImagesRepository)
+        cell.fill(with: viewModel.items.value[indexPath.row])
         
         return cell
     }
@@ -67,8 +81,34 @@ extension BanksListViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {viewModel.didSelectItem(at: indexPath.row)}
-    
-    private func updateItems() {
-        print("em")
-        self.tableView.reloadData()}
 }
+
+extension BanksListViewController: UISearchBarDelegate
+{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
+    {
+        guard let searchText = searchBar.text, !searchText.isEmpty else { return }
+        viewModel.didSearch(query: searchText)
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
+    {
+        viewModel.didCancelSearch()
+        print("cancel")
+    }
+    
+    func setUpSearchBar()
+    {
+        searchBar.delegate = self
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String)
+    {
+        if searchText.isEmpty
+        {
+            viewModel.didCancelSearch()
+        }
+    }
+}
+
+
