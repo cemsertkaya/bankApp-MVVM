@@ -9,9 +9,11 @@ import CoreLocation
 import MapKit
 import UIKit
 
-class OpenMapDirections {
+class OpenMapDirections
+{
     // If you are calling the coordinate from a Model, don't forgot to pass it in the function parenthesis.
-    static func present(in viewController: UIViewController, sourceView: UIView, locationString : String) {
+    static func present(in viewController: UIViewController, sourceView: UIView, locationString : String)
+    {
         let actionSheet = UIAlertController(title: "Open Location", message: "Choose an app to open direction", preferredStyle: .actionSheet)
        
         actionSheet.addAction(UIAlertAction(title: "Apple Maps", style: .default, handler: { _ in

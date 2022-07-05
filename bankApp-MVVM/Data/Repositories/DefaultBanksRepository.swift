@@ -30,8 +30,8 @@ extension DefaultBanksRepository: BanksRepository
         task.networkTask = self.dataTransferService.request(with:  APIEndpoints.getBanks()) { result in
             switch result
             {
-                case .success(let moviePage):
-                    completion(.success(moviePage))
+                case .success(let banks):
+                    completion(.success(banks))
                 case .failure(let error):
                     completion(.failure(error))
             }

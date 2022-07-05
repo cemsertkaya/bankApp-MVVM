@@ -94,7 +94,6 @@ extension BanksListViewController: UISearchBarDelegate
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
     {
         viewModel.didCancelSearch()
-        print("cancel")
     }
     
     func setUpSearchBar()
@@ -107,6 +106,10 @@ extension BanksListViewController: UISearchBarDelegate
         if searchText.isEmpty
         {
             viewModel.didCancelSearch()
+        }
+        else
+        {
+            viewModel.didSearch(query: searchText)
         }
     }
 }
