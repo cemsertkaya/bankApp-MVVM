@@ -37,13 +37,15 @@ extension BankDetailsViewController: UITableViewDelegate, UITableViewDataSource
     {
         let cell = UITableViewCell()
         cell.textLabel?.text = viewModel.getContent(index: indexPath.row)
-        
+        cell.backgroundColor = UIColor.white
+        cell.textLabel?.textColor = UIColor.black
         if indexPath.row == 9 || indexPath.row == 8 {cell.textLabel?.font =  UIFont.systemFont(ofSize: 10)}
         return cell
     }
     
     func setUpTableView()
     {
+        tableView.backgroundColor = UIColor.white
         tableView.delegate = self
         tableView.dataSource = self
     }

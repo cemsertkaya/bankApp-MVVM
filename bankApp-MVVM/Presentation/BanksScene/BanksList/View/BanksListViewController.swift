@@ -8,7 +8,7 @@
 import UIKit
 
 
-final class BanksListViewController: UIViewController, StoryboardInstantiable
+final class BanksListViewController: UIViewController, StoryboardInstantiable, Alertable
 {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -36,10 +36,16 @@ final class BanksListViewController: UIViewController, StoryboardInstantiable
     private func bind(to viewModel: BanksListViewModel)
     {
         viewModel.items.observe(on: self) { [weak self] _ in self?.updateItems() }
-        viewModel.loading.observe(on: self) { [weak self] in self?.updateLoading($0) }
+        viewModel.loading.observe(on: self) { [weak self] in self?.updateLoading($0)}
+        viewModel.error.observe(on: self) { [weak self] in self?.showError($0)}
     }
 
-    private func setupViews() {title = viewModel.screenTitle}
+    private func setupViews()
+    {
+        title = viewModel.screenTitle
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+    }
     
     private func updateItems() {self.tableView.reloadData()}
 
@@ -54,6 +60,13 @@ final class BanksListViewController: UIViewController, StoryboardInstantiable
             case .none: CustomLoadingView.hide()
         }
     }
+    
+    private func showError(_ error: String) {
+        guard !error.isEmpty else { return }
+        showAlert(title: viewModel.errorTitle, message: error)
+    }
+    
+    @IBAction func refreshButtonAction(_ sender: Any) {viewModel.refreshBanks()}
 }
 
 extension BanksListViewController: UITableViewDelegate, UITableViewDataSource

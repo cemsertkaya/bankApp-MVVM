@@ -18,16 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="Search by City" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cp-cp-YgE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Rfj-dA-O2Z"/>
                                 </constraints>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" systemColor="systemBlueColor"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-aO-UZj">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="tableViewCell" rowHeight="168" id="jQX-jM-qZ4" customClass="TableViewCell" customModule="bankApp_MVVM" customModuleProvider="target">
@@ -53,7 +54,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gm-YY-eIk">
-                                                            <rect key="frame" x="8" y="92" width="327" height="14.5"/>
+                                                            <rect key="frame" x="8" y="98" width="327" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" systemColor="systemBlueColor"/>
                                                             <nil key="highlightedColor"/>
@@ -71,7 +72,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="VXK-Uw-Avl" secondAttribute="trailing" constant="8" id="14t-pZ-wzu"/>
                                                         <constraint firstAttribute="trailing" secondItem="0gm-YY-eIk" secondAttribute="trailing" constant="8" id="3vm-K7-EBb"/>
@@ -86,7 +87,7 @@
                                                         <constraint firstItem="jab-fR-vjs" firstAttribute="trailing" secondItem="0gm-YY-eIk" secondAttribute="trailing" id="jVh-1q-CH6"/>
                                                         <constraint firstItem="Qjx-bn-q5h" firstAttribute="top" secondItem="VXK-Uw-Avl" secondAttribute="bottom" constant="63" id="kPV-hf-Tbm"/>
                                                         <constraint firstItem="VXK-Uw-Avl" firstAttribute="leading" secondItem="chh-ew-ghy" secondAttribute="leading" constant="8" id="oOZ-aC-1yC"/>
-                                                        <constraint firstItem="0gm-YY-eIk" firstAttribute="top" secondItem="jab-fR-vjs" secondAttribute="bottom" constant="7" id="rJf-63-HRM"/>
+                                                        <constraint firstItem="0gm-YY-eIk" firstAttribute="top" secondItem="jab-fR-vjs" secondAttribute="bottom" constant="13" id="rJf-63-HRM"/>
                                                         <constraint firstAttribute="trailing" secondItem="dxr-PH-Eku" secondAttribute="trailing" constant="8" id="zTi-tC-mF1"/>
                                                         <constraint firstItem="VXK-Uw-Avl" firstAttribute="top" secondItem="dxr-PH-Eku" secondAttribute="bottom" constant="7" id="zeF-mh-ono"/>
                                                     </constraints>
@@ -108,7 +109,7 @@
                                                 <constraint firstItem="chh-ew-ghy" firstAttribute="top" secondItem="Il8-P8-J7C" secondAttribute="top" constant="11" id="g4u-zP-vYr"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="address" destination="Qjx-bn-q5h" id="Keb-Kf-7DT"/>
                                             <outlet property="city" destination="dxr-PH-Eku" id="i3M-zZ-ZO8"/>
@@ -121,7 +122,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
                             <constraint firstItem="BFc-aO-UZj" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="4tK-9R-RVb"/>
                             <constraint firstItem="BFc-aO-UZj" firstAttribute="top" secondItem="1cp-cp-YgE" secondAttribute="bottom" id="Rrb-DK-ad4"/>
@@ -132,7 +133,15 @@
                             <constraint firstItem="1cp-cp-YgE" firstAttribute="leading" secondItem="BFc-aO-UZj" secondAttribute="leading" id="xjJ-YJ-gqx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="foF-uV-rhd"/>
+                    <navigationItem key="navigationItem" id="foF-uV-rhd">
+                        <barButtonItem key="rightBarButtonItem" title="Refresh" id="iaa-GR-M2b">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="refreshButtonAction:" destination="Y6W-OH-hqX" id="pLh-Al-dXl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="searchBar" destination="1cp-cp-YgE" id="zTa-pL-oSV"/>
                         <outlet property="tableView" destination="BFc-aO-UZj" id="7hd-0y-Wck"/>
@@ -144,9 +153,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

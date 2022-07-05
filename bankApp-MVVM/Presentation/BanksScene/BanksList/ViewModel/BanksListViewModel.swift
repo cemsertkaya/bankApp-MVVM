@@ -21,6 +21,7 @@ enum BanksListViewModelLoading
 protocol BanksListViewModelInput
 {
     func viewDidLoad()
+    func refreshBanks()
     func didSearch(query: String)
     func didCancelSearch()
     func didSelectItem(at index: Int)
@@ -117,7 +118,18 @@ extension DefaultBanksListViewModel
     
     func didCancelSearch() {items.value = tempItems.value}
     
-    func didSelectItem(at index: Int) {actions.showBankDetails(banks[index])}
+    func didSelectItem(at index: Int)
+    {
+        actions.showBankDetails(banks[index])
+        
+    }
+    
+    func refreshBanks()
+    {
+        banks.removeAll()
+        items.value.removeAll()
+        load(loading: .fullScreen)
+    }
 }
 
 
