@@ -12,26 +12,21 @@ class BankDetailsViewController: UIViewController, StoryboardInstantiable  {
     private var viewModel: BankDetailsViewModel!
     @IBOutlet var tableView: UITableView!
     
-    
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         setUpTableView()
-        // Do any additional setup after loading the view.
+        
     }
-    
 
-    static func create(with viewModel: BankDetailsViewModel) -> BankDetailsViewController {
+    static func create(with viewModel: BankDetailsViewModel) -> BankDetailsViewController
+    {
         let view = BankDetailsViewController.instantiateViewController()
         view.viewModel = viewModel
         return view
     }
   
-    
-    @IBAction func goWithNavigationButton(_ sender: Any)
-    {
-    }
-    
-    
+    @IBAction func goWithNavigationButton(_ sender: Any) {viewModel.pushToMap(in: self, sourceView: sender as! UIView)}
 }
 
 extension BankDetailsViewController: UITableViewDelegate, UITableViewDataSource
@@ -41,9 +36,7 @@ extension BankDetailsViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = UITableViewCell()
-        
         cell.textLabel?.text = viewModel.getContent(index: indexPath.row)
-        
         return cell
     }
     
@@ -52,5 +45,4 @@ extension BankDetailsViewController: UITableViewDelegate, UITableViewDataSource
         tableView.delegate = self
         tableView.dataSource = self
     }
-    
 }

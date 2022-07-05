@@ -6,21 +6,18 @@
 //
 
 import Foundation
-
+import UIKit
 
 protocol BankDetailsViewModelOutput
 {
     func getContent(index : Int) -> String
+    func pushToMap(in viewController: UIViewController, sourceView: UIView) -> Void
 }
 
-protocol BankDetailsViewModel: BankDetailsViewModelOutput
-{
-    
-}
+protocol BankDetailsViewModel: BankDetailsViewModelOutput {}
 
 final class DefaultBankDetailsViewModel : BankDetailsViewModel
 {
-    
     // MARK: - OUTPUT
 
     
@@ -67,6 +64,9 @@ final class DefaultBankDetailsViewModel : BankDetailsViewModel
             default:return ""
         }
     }
+    
+    func pushToMap(in viewController: UIViewController, sourceView: UIView) {OpenMapDirections.present(in: viewController, sourceView: sourceView, locationString: self.dcADRES)}
+    
     
 }
 

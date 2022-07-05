@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E8E487F2874269300B786A0 /* UI+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E487E2874269300B786A0 /* UI+.swift */; };
 		4E8E4881287427BC00B786A0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E4880287427BC00B786A0 /* TableViewCell.swift */; };
+		4E8E4884287454D000B786A0 /* OpenMapDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E4883287454D000B786A0 /* OpenMapDirections.swift */; };
 		4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D042871D000008AFEFB /* AppDelegate.swift */; };
 		4ED12D0E2871D003008AFEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0D2871D003008AFEFB /* Assets.xcassets */; };
 		4ED12D112871D003008AFEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */; };
@@ -76,6 +77,7 @@
 /* Begin PBXFileReference section */
 		4E8E487E2874269300B786A0 /* UI+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+.swift"; sourceTree = "<group>"; };
 		4E8E4880287427BC00B786A0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4E8E4883287454D000B786A0 /* OpenMapDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMapDirections.swift; sourceTree = "<group>"; };
 		4ED12D012871D000008AFEFB /* bankApp-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bankApp-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED12D042871D000008AFEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ED12D0D2871D003008AFEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E8E4882287454AD00B786A0 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4E8E4883287454D000B786A0 /* OpenMapDirections.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		4ED12CF82871D000008AFEFB = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				4ED12D982872F272008AFEFB /* Flows */,
+				4E8E4882287454AD00B786A0 /* Map */,
 				4ED12D432871D567008AFEFB /* BanksList */,
 				4ED12D442871D57D008AFEFB /* BankDetails */,
 			);
@@ -570,6 +581,7 @@
 				4ED12D3E2871D446008AFEFB /* ConnectionError.swift in Sources */,
 				4ED12D542871D679008AFEFB /* BankDetailsViewController.swift in Sources */,
 				4ED12D892871E858008AFEFB /* NetworkConfig.swift in Sources */,
+				4E8E4884287454D000B786A0 /* OpenMapDirections.swift in Sources */,
 				4ED12D9B2872FAA3008AFEFB /* Observer.swift in Sources */,
 				4ED12D972872F26B008AFEFB /* BanksFlowCoordinator.swift in Sources */,
 				4ED12D7E2871E437008AFEFB /* AppFlowCoordinator.swift in Sources */,
