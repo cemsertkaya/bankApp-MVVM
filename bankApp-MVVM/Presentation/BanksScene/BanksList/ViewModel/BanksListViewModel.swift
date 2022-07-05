@@ -114,10 +114,9 @@ extension DefaultBanksListViewModel
         load(loading: .fullScreen)
     }
     
-    func didSearch(query: String) {
-        print(query)
+    func didSearch(query: String)
+    {
         items.value = tempItems.value.filter {$0.city.localizedLowercase.contains(query.localizedLowercase)}
-        
     }
     
     func didCancelSearch() {items.value = tempItems.value}

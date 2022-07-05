@@ -77,7 +77,7 @@ final class DefaultBankDetailsViewModel : BankDetailsViewModel
         AnalyticsParameterItemName: "BankDetails",
         AnalyticsParameterContentType: "cont",
         ])
-
+        print("logged")
     }
 }
 

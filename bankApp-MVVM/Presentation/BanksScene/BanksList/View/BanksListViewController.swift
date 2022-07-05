@@ -45,8 +45,6 @@ final class BanksListViewController: UIViewController, StoryboardInstantiable, A
         title = viewModel.screenTitle
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
     }
     
     private func updateItems() {self.tableView.reloadData()}
@@ -69,8 +67,7 @@ final class BanksListViewController: UIViewController, StoryboardInstantiable, A
     }
     
     @IBAction func refreshButtonAction(_ sender: Any) {viewModel.refreshBanks()}
-    
-    @objc func dismissKeyboard() {view.endEditing(true)}
+
 }
 
 extension BanksListViewController: UITableViewDelegate, UITableViewDataSource
@@ -97,7 +94,13 @@ extension BanksListViewController: UITableViewDelegate, UITableViewDataSource
         tableView.dataSource = self
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {viewModel.didSelectItem(at: indexPath.row)}
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        view.endEditing(true)
+        viewModel.didSelectItem(at: indexPath.row)
+    }
+    
+    
 }
 
 extension BanksListViewController: UISearchBarDelegate

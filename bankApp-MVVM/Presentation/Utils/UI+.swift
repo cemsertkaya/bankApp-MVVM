@@ -8,36 +8,31 @@
 import Foundation
 import UIKit
 
-@IBDesignable extension UIView {
+@IBDesignable
+class UIViewRadius : UIView
+{
+   
     @IBInspectable var borderColor: UIColor? {
-        set {
-            layer.borderColor = newValue?.cgColor
-        }
-        get {
-            guard let color = layer.borderColor else {
-                return nil
+            didSet {
+                layer.borderColor = borderColor?.cgColor
             }
-            return UIColor(cgColor: color)
         }
-    }
-    @IBInspectable var borderWidth: CGFloat {
-        set {
-            layer.borderWidth = newValue
+
+        @IBInspectable var borderWidth: CGFloat = 0 {
+            didSet {
+                layer.borderWidth = borderWidth
+            }
         }
-        get {
-            return layer.borderWidth
+        
+        @IBInspectable var borderRadius : CGFloat = 0{
+            didSet{
+                layer.cornerRadius = borderRadius
+            }
         }
-    }
-    @IBInspectable var cornerRadius: CGFloat {
-        set {
-            layer.cornerRadius = newValue
-            clipsToBounds = newValue > 0
-        }
-        get {
-            return layer.cornerRadius
-        }
-    }
+    
 }
+
+
 
 public class CustomLoadingView {
 
