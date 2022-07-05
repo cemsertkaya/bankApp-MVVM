@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		363C5E3B23DFACCEDDBFC018 /* Pods_bankApp_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE49E443FFD7EB4D75601B04 /* Pods_bankApp_MVVM.framework */; };
 		4E8E487F2874269300B786A0 /* UI+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E487E2874269300B786A0 /* UI+.swift */; };
 		4E8E4881287427BC00B786A0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E4880287427BC00B786A0 /* TableViewCell.swift */; };
 		4E8E4884287454D000B786A0 /* OpenMapDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E4883287454D000B786A0 /* OpenMapDirections.swift */; };
 		4E8E4886287463A400B786A0 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E4885287463A400B786A0 /* Alertable.swift */; };
+		4E8E48882874718600B786A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E8E48872874718600B786A0 /* GoogleService-Info.plist */; };
 		4ED12D052871D000008AFEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D042871D000008AFEFB /* AppDelegate.swift */; };
 		4ED12D0E2871D003008AFEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0D2871D003008AFEFB /* Assets.xcassets */; };
 		4ED12D112871D003008AFEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12D0F2871D003008AFEFB /* LaunchScreen.storyboard */; };
@@ -43,6 +45,8 @@
 		4ED12D9B2872FAA3008AFEFB /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D9A2872FAA3008AFEFB /* Observer.swift */; };
 		4ED12D9F28732024008AFEFB /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED12D9E28732024008AFEFB /* StoryboardInstantiable.swift */; };
 		4ED12DA128733E34008AFEFB /* BanksListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED12DA028733E34008AFEFB /* BanksListViewController.storyboard */; };
+		73E0B8785888D68519A52528 /* Pods_bankApp_MVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A686513C1D59D5324E1176E /* Pods_bankApp_MVVMTests.framework */; };
+		C0ABD0BD91284AD6D9EB82A8 /* Pods_bankApp_MVVM_bankApp_MVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46072DAA6FAB996406F75D1 /* Pods_bankApp_MVVM_bankApp_MVVMUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,10 +80,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A686513C1D59D5324E1176E /* Pods_bankApp_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bankApp_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B56166B129D8DA31D9AFE3 /* Pods-bankApp-MVVM-bankApp-MVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankApp-MVVM-bankApp-MVVMUITests.debug.xcconfig"; path = "Target Support Files/Pods-bankApp-MVVM-bankApp-MVVMUITests/Pods-bankApp-MVVM-bankApp-MVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E8E487E2874269300B786A0 /* UI+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+.swift"; sourceTree = "<group>"; };
 		4E8E4880287427BC00B786A0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4E8E4883287454D000B786A0 /* OpenMapDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMapDirections.swift; sourceTree = "<group>"; };
 		4E8E4885287463A400B786A0 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		4E8E48872874718600B786A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4ED12D012871D000008AFEFB /* bankApp-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bankApp-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED12D042871D000008AFEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ED12D0D2871D003008AFEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +123,13 @@
 		4ED12D9A2872FAA3008AFEFB /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		4ED12D9E28732024008AFEFB /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		4ED12DA028733E34008AFEFB /* BanksListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BanksListViewController.storyboard; sourceTree = "<group>"; };
+		726F6A0A3EF8A26BC4ED0424 /* Pods-bankApp-MVVM-bankApp-MVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankApp-MVVM-bankApp-MVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-bankApp-MVVM-bankApp-MVVMUITests/Pods-bankApp-MVVM-bankApp-MVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		75EB55C91DA64813193CF8F5 /* Pods-bankApp-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankApp-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-bankApp-MVVM/Pods-bankApp-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		7C35897AEFBF229E6F1B7FB7 /* Pods-bankApp-MVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankApp-MVVMTests.debug.xcconfig"; path = "Target Support Files/Pods-bankApp-MVVMTests/Pods-bankApp-MVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE49E443FFD7EB4D75601B04 /* Pods_bankApp_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bankApp_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89CF7258E995C5ECF16C4E5 /* Pods-bankApp-MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankApp-MVVMTests.release.xcconfig"; path = "Target Support Files/Pods-bankApp-MVVMTests/Pods-bankApp-MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+		E46072DAA6FAB996406F75D1 /* Pods_bankApp_MVVM_bankApp_MVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bankApp_MVVM_bankApp_MVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEAE19BBE4895E3C15B76F2C /* Pods-bankApp-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankApp-MVVM.release.xcconfig"; path = "Target Support Files/Pods-bankApp-MVVM/Pods-bankApp-MVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363C5E3B23DFACCEDDBFC018 /* Pods_bankApp_MVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E0B8785888D68519A52528 /* Pods_bankApp_MVVMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +153,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0ABD0BD91284AD6D9EB82A8 /* Pods_bankApp_MVVM_bankApp_MVVMUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EEA8D0AAF77549C0405528E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75EB55C91DA64813193CF8F5 /* Pods-bankApp-MVVM.debug.xcconfig */,
+				FEAE19BBE4895E3C15B76F2C /* Pods-bankApp-MVVM.release.xcconfig */,
+				42B56166B129D8DA31D9AFE3 /* Pods-bankApp-MVVM-bankApp-MVVMUITests.debug.xcconfig */,
+				726F6A0A3EF8A26BC4ED0424 /* Pods-bankApp-MVVM-bankApp-MVVMUITests.release.xcconfig */,
+				7C35897AEFBF229E6F1B7FB7 /* Pods-bankApp-MVVMTests.debug.xcconfig */,
+				D89CF7258E995C5ECF16C4E5 /* Pods-bankApp-MVVMTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4E8E4882287454AD00B786A0 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +190,7 @@
 				4ED12D242871D004008AFEFB /* bankApp-MVVMUITests */,
 				4ED12D022871D000008AFEFB /* Products */,
 				4ED12D752871E2E7008AFEFB /* Frameworks */,
+				3EEA8D0AAF77549C0405528E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +258,7 @@
 		4ED12D3F2871D4C6008AFEFB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4E8E48872874718600B786A0 /* GoogleService-Info.plist */,
 				4ED12D0D2871D003008AFEFB /* Assets.xcassets */,
 				4ED12D122871D003008AFEFB /* Info.plist */,
 			);
@@ -352,6 +385,9 @@
 		4ED12D752871E2E7008AFEFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE49E443FFD7EB4D75601B04 /* Pods_bankApp_MVVM.framework */,
+				E46072DAA6FAB996406F75D1 /* Pods_bankApp_MVVM_bankApp_MVVMUITests.framework */,
+				0A686513C1D59D5324E1176E /* Pods_bankApp_MVVMTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -436,18 +472,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ED12D2B2871D004008AFEFB /* Build configuration list for PBXNativeTarget "bankApp-MVVM" */;
 			buildPhases = (
+				807B749DA8B0C6CBF550309F /* [CP] Check Pods Manifest.lock */,
 				4ED12CFD2871D000008AFEFB /* Sources */,
 				4ED12CFE2871D000008AFEFB /* Frameworks */,
 				4ED12CFF2871D000008AFEFB /* Resources */,
 				4ED12D742871E2D3008AFEFB /* Embed Frameworks */,
+				CB0196CD32A3EF7EC672D1E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "bankApp-MVVM";
-			packageProductDependencies = (
-			);
 			productName = "bankApp-MVVM";
 			productReference = 4ED12D012871D000008AFEFB /* bankApp-MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -456,6 +492,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ED12D2E2871D004008AFEFB /* Build configuration list for PBXNativeTarget "bankApp-MVVMTests" */;
 			buildPhases = (
+				BC003816CAB253C6D85E8324 /* [CP] Check Pods Manifest.lock */,
 				4ED12D132871D004008AFEFB /* Sources */,
 				4ED12D142871D004008AFEFB /* Frameworks */,
 				4ED12D152871D004008AFEFB /* Resources */,
@@ -474,9 +511,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ED12D312871D004008AFEFB /* Build configuration list for PBXNativeTarget "bankApp-MVVMUITests" */;
 			buildPhases = (
+				20FAD259FFB393310A1F75FE /* [CP] Check Pods Manifest.lock */,
 				4ED12D1D2871D004008AFEFB /* Sources */,
 				4ED12D1E2871D004008AFEFB /* Frameworks */,
 				4ED12D1F2871D004008AFEFB /* Resources */,
+				FBC4F3EDB838524DDD7DC231 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -520,8 +559,6 @@
 				Base,
 			);
 			mainGroup = 4ED12CF82871D000008AFEFB;
-			packageReferences = (
-			);
 			productRefGroup = 4ED12D022871D000008AFEFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -540,6 +577,7 @@
 			files = (
 				4ED12D522871D665008AFEFB /* BankDetailsViewController.storyboard in Resources */,
 				4ED12D112871D003008AFEFB /* LaunchScreen.storyboard in Resources */,
+				4E8E48882874718600B786A0 /* GoogleService-Info.plist in Resources */,
 				4ED12D0E2871D003008AFEFB /* Assets.xcassets in Resources */,
 				4ED12DA128733E34008AFEFB /* BanksListViewController.storyboard in Resources */,
 			);
@@ -560,6 +598,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20FAD259FFB393310A1F75FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bankApp-MVVM-bankApp-MVVMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		807B749DA8B0C6CBF550309F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bankApp-MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC003816CAB253C6D85E8324 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bankApp-MVVMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB0196CD32A3EF7EC672D1E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bankApp-MVVM/Pods-bankApp-MVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bankApp-MVVM/Pods-bankApp-MVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bankApp-MVVM/Pods-bankApp-MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC4F3EDB838524DDD7DC231 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bankApp-MVVM-bankApp-MVVMUITests/Pods-bankApp-MVVM-bankApp-MVVMUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bankApp-MVVM-bankApp-MVVMUITests/Pods-bankApp-MVVM-bankApp-MVVMUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bankApp-MVVM-bankApp-MVVMUITests/Pods-bankApp-MVVM-bankApp-MVVMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4ED12CFD2871D000008AFEFB /* Sources */ = {
@@ -758,6 +899,7 @@
 		};
 		4ED12D2C2871D004008AFEFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EB55C91DA64813193CF8F5 /* Pods-bankApp-MVVM.debug.xcconfig */;
 			buildSettings = {
 				API_BASE_URL = "https://raw.githubusercontent.com/fatiha380/mockjson/main/bankdata";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -788,6 +930,7 @@
 		};
 		4ED12D2D2871D004008AFEFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEAE19BBE4895E3C15B76F2C /* Pods-bankApp-MVVM.release.xcconfig */;
 			buildSettings = {
 				API_BASE_URL = "https://raw.githubusercontent.com/fatiha380/mockjson/main/bankdata";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -818,6 +961,7 @@
 		};
 		4ED12D2F2871D004008AFEFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C35897AEFBF229E6F1B7FB7 /* Pods-bankApp-MVVMTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -838,6 +982,7 @@
 		};
 		4ED12D302871D004008AFEFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D89CF7258E995C5ECF16C4E5 /* Pods-bankApp-MVVMTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -858,6 +1003,7 @@
 		};
 		4ED12D322871D004008AFEFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42B56166B129D8DA31D9AFE3 /* Pods-bankApp-MVVM-bankApp-MVVMUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -876,6 +1022,7 @@
 		};
 		4ED12D332871D004008AFEFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726F6A0A3EF8A26BC4ED0424 /* Pods-bankApp-MVVM-bankApp-MVVMUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

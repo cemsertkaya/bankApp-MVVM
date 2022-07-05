@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appFlowCoordinator = AppFlowCoordinator(navigationController: navigationController,appDIContainer: appDIContainer)
         appFlowCoordinator?.start()
         window?.makeKeyAndVisible()
-    
+        FirebaseApp.configure()
         return true
     }
 

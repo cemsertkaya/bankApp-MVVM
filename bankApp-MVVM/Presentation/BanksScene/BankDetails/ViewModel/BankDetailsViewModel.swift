@@ -7,11 +7,15 @@
 
 import Foundation
 import UIKit
+import FirebaseAnalytics
 
 protocol BankDetailsViewModelOutput
 {
     func getContent(index : Int) -> String
+    
     func pushToMap(in viewController: UIViewController, sourceView: UIView) -> Void
+    
+    func viewDidLoad() -> Void
 }
 
 protocol BankDetailsViewModel: BankDetailsViewModelOutput {}
@@ -67,7 +71,14 @@ final class DefaultBankDetailsViewModel : BankDetailsViewModel
     
     func pushToMap(in viewController: UIViewController, sourceView: UIView) {OpenMapDirections.present(in: viewController, sourceView: sourceView, locationString: self.dcADRES)}
     
-    
+    func viewDidLoad() {
+        Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+        AnalyticsParameterItemID: "id-BankDetails",
+        AnalyticsParameterItemName: "BankDetails",
+        AnalyticsParameterContentType: "cont",
+        ])
+
+    }
 }
 
 

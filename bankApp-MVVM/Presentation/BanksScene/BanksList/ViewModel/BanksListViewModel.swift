@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct BanksListViewModelActions
 {
     let showBankDetails: (Bank) -> Void
@@ -108,7 +109,10 @@ final class DefaultBanksListViewModel : BanksListViewModel
 
 extension DefaultBanksListViewModel
 {
-    func viewDidLoad() {load(loading: .fullScreen)}
+    func viewDidLoad()
+    {
+        load(loading: .fullScreen)
+    }
     
     func didSearch(query: String) {
         print(query)

@@ -16,6 +16,7 @@ class BankDetailsViewController: UIViewController, StoryboardInstantiable  {
     {
         super.viewDidLoad()
         setUpTableView()
+        viewModel.viewDidLoad()
         
     }
 
