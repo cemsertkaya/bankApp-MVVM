@@ -65,16 +65,15 @@ final class DefaultBanksListViewModel : BanksListViewModel
     let emptyDataTitle = NSLocalizedString("Search results", comment: "")
     let errorTitle = NSLocalizedString("Error", comment: "")
     let screenTitle = NSLocalizedString("Banks", comment: "")
-    let searchBarPlaceholder = NSLocalizedString("Search Banks", comment: "")
     
 
     
     private func appendBanks(_ banks: [Bank])
     {
         self.banks = banks
-        for bank in self.banks
+        for (index,bank) in self.banks.enumerated()
         {
-            self.items.value.append(BanksListItemViewModel(bank: bank))
+            self.items.value.append(BanksListItemViewModel(bank: bank,index: index))
         }
         tempItems.value = items.value
     }
@@ -119,7 +118,7 @@ extension DefaultBanksListViewModel
     
     func didCancelSearch() {items.value = tempItems.value}
     
-    func didSelectItem(at index: Int) {actions.showBankDetails(banks[index])}
+    func didSelectItem(at index: Int) {actions.showBankDetails(banks[items.value[index].bankArrayIndex])}
     
     func refreshBanks()
     {
